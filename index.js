@@ -2,6 +2,7 @@ const express = require('express');
 const app = express(); // instance of express
 const port = 8000;
 const path = require('path');
+app.use(express.urlencoded({extended:false}));
 // define template engine
 app.set("view engine" , "ejs");
 app.set("views" , "view");
